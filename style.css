@@ -87,8 +87,3 @@ h2 {
 .clear:hover {
     background-color: rgb(94, 94, 94);
 }
-
-.button-row:last-child .button:first-child {
-    width: 94px;
-    border-radius: 18px;
-}
