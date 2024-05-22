@@ -24,3 +24,71 @@ h2 {
     margin-top: 0;
     margin-bottom: 2em;
 }
+
+.calculator {
+    background-color: rgba(119,59,82,1);
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+    border: solid 0px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 14em;
+    height: 20em;
+}
+
+.wrapper {
+    margin: 2em 1em 2em 1em;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 4px 0 4px 0;
+}
+
+.button-row:first-child{
+    margin-bottom: 24px;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.clear {
+    background-color: rgba(119,59,82,1);
+    color: antiquewhite;
+    border: solid 0.5px black;
+    border-radius: 8px;
+    font-weight: 600;
+    width: 32px;
+    height: 32px
+}
+
+.display {
+    font-size: x-large;
+}
+
+.button {
+    background-color: antiquewhite;
+    border: solid 1px black;
+    border-radius: 32%;
+    width: 46px;
+    height: 46px;
+    font-weight: 600;
+}
+
+.button:last-child {
+    background-color: rgb(75, 37, 51);
+    color: antiquewhite;
+    border-color: rgb(51, 25, 35);
+}
+
+.button:hover,
+.clear:hover {
+    background-color: rgb(94, 94, 94);
+}
+
+.button-row:last-child .button:first-child {
+    width: 94px;
+    border-radius: 18px;
+}
