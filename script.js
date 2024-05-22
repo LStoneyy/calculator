@@ -1,7 +1,7 @@
 let var1;
 let var2;
 let operator;
-let displayvalue = 0;
+let displayvalue = "";
 const displayDiv = document.querySelector(".display");
 
 
@@ -39,7 +39,7 @@ function updateDisplay(input) {
 }
 
 function clearDisplay() {
-   displayvalue = 0;
-   displayDiv.textContent = displayvalue;
+   displayvalue = "";
+   displayDiv.textContent = "0";
 }
 
