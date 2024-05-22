@@ -38,12 +38,14 @@ function operate(var1, var2, operator) {
 
 function updateDisplay(input) {
    if (operator === null) {
-       var1 += input;
-       displayvalue = var1;
-   } else {
-       var2 += input;
-       displayvalue = var2;
-   }
+      if (input === '.' && var1.includes('.')) return;
+      var1 += input;
+      displayvalue = var1;
+  } else {
+      if (input === '.' && var2.includes('.')) return;
+      var2 += input;
+      displayvalue = var2;
+  }
    displayDiv.textContent = displayvalue;
 }
 
@@ -66,7 +68,7 @@ function getOperator(input) {
 function calculate() {
    if (var1 !== "" && var2 !== "" && operator !== null) {
       const result = operate(var1, var2, operator);
-      displayDiv.textContent = result;
+      displayDiv.textContent = Math.round(result * 10000) / 10000;
       var1 = result.toString();
       var2 = "";
       operator = null;
