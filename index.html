@@ -33,7 +33,7 @@
                 <button class="button" onclick="updateDisplay('9')">
                     9
                 </button>
-                <button class="button">
+                <button class="button" onclick="getOperator('/')">
                     &divide;
                 </button>
             </div>
@@ -47,7 +47,7 @@
                 <button class="button" onclick="updateDisplay('6')">
                     6
                 </button>
-                <button class="button">
+                <button class="button" onclick="getOperator('*')">
                     &times;
                 </button>
             </div>
@@ -61,7 +61,7 @@
                 <button class="button" onclick="updateDisplay('3')">
                     3
                 </button>
-                <button class="button">
+                <button class="button" onclick="getOperator('-')">
                     &minus;
                 </button>
             </div>
@@ -69,10 +69,10 @@
                 <button class="button" onclick="updateDisplay('0')">
                     0
                 </button>
-                <button class="button">
+                <button class="button" onclick="calculate()">
                     &equals;
                 </button>
-                <button class="button">
+                <button class="button" onclick="getOperator('+')">
                     &plus;
                 </button>
             </div>
